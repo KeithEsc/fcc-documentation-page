@@ -1,0 +1,154 @@
+html, 
+body {
+    background-color: rgb(32, 32, 32);
+    color: gainsboro;
+    font-family: 'Open Sans', Arial, sans-serif;
+    min-width: 290px;
+    line-height: 1.5;
+}
+
+    .search-box {
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    #search-form {
+        display: flex;
+        background-color: #f2f2f2;
+        overflow: hidden;
+    }
+
+    #search-input {
+        flex: 1;
+        padding: 8px;
+        border: none;
+        outline: none;
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        padding: 8px 15px;
+        background-color: rgb(32, 32, 32);
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+        background-color: rgb(90, 84, 84);
+    }
+
+
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    width: 300px;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    border-right: solid;
+}
+
+header {
+    color: white;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#main-doc header {
+    text-align: left;
+    margin: 0px;
+}
+
+#navbar ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar li {
+    color: gainsboro;
+    border-top: 1px solid;
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+#navbar a {
+    display: block;
+    padding: 10px 30px;
+    color: gainsboro;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+  }
+
+  section article {
+    color: gainsboro;
+    margin: 15px;
+    font-size: 0.96em;
+  }
+
+  section li {
+    margin: 15px 0px 0px 20px;
+  }
+
+    /* Media query to hide the sidebar on smaller screens */
+@media (max-width: 768px) {
+    #navbar {
+        display: none;
+    }
+    .main-section {
+        margin-left: 0;
+    }
+}
+  
+  @media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+    #navbar ul {
+      border: 1px solid;
+      height: 207px;
+    }
+  
+    #navbar {
+      background-color: rgb(32, 32, 32);
+      position: absolute;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-height: 275px;
+      border: none;
+      z-index: 1;
+      border-bottom: 2px solid;
+    }
+  
+    #main-doc {
+      position: relative;
+      margin-left: 0px;
+      margin-top: 270px;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    #main-doc {
+      margin-left: -10px;
+    }
+  
+    code {
+      margin-left: -20px;
+      width: 100%;
+      padding: 15px;
+      padding-left: 10px;
+      padding-right: 45px;
+      min-width: 233px;
+    }
+  }
